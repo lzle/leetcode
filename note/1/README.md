@@ -24,14 +24,14 @@ return [0, 1].
 ## 代码
 ````
 func twoSum(nums []int, target int) []int {
-	mp := make(map[int]int)
-	for i,num := range nums {
-		if v,ok := mp[target - num];ok {
-			return []int{v,i}
-		}
-		mp[num] = i
-	}
-	return nil
+    mp := make(map[int]int)
+    for i,num := range nums {
+    	if v,ok := mp[target - num];ok {
+    		return []int{v,i}
+    	}
+    	mp[num] = i
+    }
+    return nil
 }
 ````
 
