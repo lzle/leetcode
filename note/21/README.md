@@ -16,7 +16,7 @@ Output: 1->1->2->3->4->4
 利用递归，每次选小的节点。
 
 ## 代码
-````
+```` Go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
