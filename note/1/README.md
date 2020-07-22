@@ -15,7 +15,7 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ````
 
-## 思路
+## 思路:jack_o_lantern:
 
 关键：缓存。
 
