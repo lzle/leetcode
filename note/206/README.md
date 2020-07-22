@@ -15,12 +15,12 @@ Output: 5->4->3->2->1->NULL
 
 A linked list can be reversed either iteratively or recursively. Could you implement both?
 
-## 思路
+## 思路 :whale:
 
 利用指针pre，遍历链表，修改当前节点Next指向prev。当前节点下移，prev赋值为当前节点，如此循环。
 
 ## 代码
-````
+```` Go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
