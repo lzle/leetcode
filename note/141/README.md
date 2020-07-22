@@ -33,7 +33,7 @@ Can you solve it using O(1) (i.e. constant) memory?
 快、慢指针
 
 ## 代码
-````
+```` Go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
