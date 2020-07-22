@@ -27,7 +27,7 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 排序。
 
 ## 代码
-````
+```` Go
 func findKthLargest(nums []int, k int) int {
     sort.Ints(nums)
     return nums[len(nums)-k]
