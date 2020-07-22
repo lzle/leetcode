@@ -20,12 +20,12 @@ Given n will always be valid.
 
 Could you do this in one pass?
 
-## 思路
+## 思路 :whale:
 
 把链表对称来看，倒数第n节点就是正数(length-n+1)个结点。
 
 ## 代码
-````
+```` Go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
