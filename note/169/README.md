@@ -21,7 +21,7 @@ Output: 2
 ````
 
 
-## 思路 1
+## 思路 1 :frog:
 
 第一种方式，排序完，数组中间位置的值。
 
@@ -33,7 +33,7 @@ func majorityElement(nums []int) int {
 }
 ````
 
-## 思路 2
+## 思路 2 :whale:
 
 直接看代码
 
