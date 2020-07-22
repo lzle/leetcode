@@ -22,12 +22,12 @@ Output: 4
 
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-## 思路
+## 思路 :octocat:
 
 亦或。
 
 ## 代码
-````
+```` Go
 func singleNumber(nums []int) int {
     a := 0
     for i:=0;i<len(nums);i++ {
