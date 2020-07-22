@@ -28,12 +28,12 @@ Since the list has two middle nodes with values 3 and 4, we return the second on
 
 The number of nodes in the given list will be between 1 and 100.
 
-## 思路
+## 思路 :whale:
 
 快、慢指针。
 
 ## 代码
-````
+```` Go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
