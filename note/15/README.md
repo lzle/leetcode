@@ -20,7 +20,7 @@ A solution set is:
 ]
 ````
 
-## 思路
+## 思路 :frog:
 
 关键：排序、俩数之和。
 
@@ -29,7 +29,7 @@ A solution set is:
 排序数组，俩数之和，一头一尾，向中间靠拢。
 
 ## 代码
-````
+```` Go
 func threeSum(nums []int) [][]int {
     var ret [][]int
     sort.Ints(nums)
