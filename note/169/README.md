@@ -26,7 +26,7 @@ Output: 2
 第一种方式，排序完，数组中间位置的值。
 
 ## 代码
-````
+```` Go
 func majorityElement(nums []int) int {
     sort.Ints(nums)
     return nums[len(nums)/2]
@@ -38,7 +38,7 @@ func majorityElement(nums []int) int {
 直接看代码
 
 ## 代码
-````
+```` Go
 func majorityElement(nums []int) int {
     count := 0
     candidate := 0
