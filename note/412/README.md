@@ -36,7 +36,7 @@ Return:
 循环与3、5、15除余。
 
 ## 代码
-````
+```` Go
 func fizzBuzz(n int) []string {
     var list = make([]string,n,n)
 
