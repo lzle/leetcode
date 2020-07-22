@@ -28,12 +28,12 @@ nums2.length == n
 ````
 
 
-## 思路 
+## 思路 :whale:
 
 双指针，从后向前。
 
 ## 代码
-````
+```` Go
 func merge(nums1 []int, m int, nums2 []int, n int)  {
     var i = m
     var j = n
