@@ -34,7 +34,7 @@ Your algorithm should run in O(n) time and uses constant extra space.
 数组的值作为数组的下标，进行置换。
 
 ## 代码
-````
+```` Go
 func firstMissingPositive(nums []int) int {
     n := len(nums)
     for i := 0; i < n; i++ {
