@@ -22,7 +22,7 @@ return [0, 1].
 循环数组，从缓存map中尝试查询相加等于target的值。如果查询到则结束，查询不到把当前值添加到map中。
 
 ## 代码
-````
+``` Go
 func twoSum(nums []int, target int) []int {
     mp := make(map[int]int)
     for i,num := range nums {
@@ -33,5 +33,5 @@ func twoSum(nums []int, target int) []int {
     }
     return nil
 }
-````
+```
 
