@@ -49,28 +49,27 @@ a入栈（0位置），b入栈（1位置），遇到运算符“+”，将a和b�
 ## 代码
 ```` Go
 func evalRPN(tokens []string) int {
-	stack := []int{}
-
-	for i := 0 ; i < len(tokens); i++ {
-		length := len(stack)
-		if tokens[i] == "+" {
-			stack[length-2] = stack[length-2] + stack[length-1]
-			stack = stack[:length-1]
-		} else if tokens[i] == "-" {
-			stack[length-2] = stack[length-2] - stack[length-1]
-			stack = stack[:length-1]
-		} else if tokens[i] == "*" {
-			stack[length-2] = stack[length-2] * stack[length-1]
-			stack = stack[:length-1]
-		} else if tokens[i] == "/" {
-			stack[length-2] = stack[length-2] / stack[length-1]
-			stack = stack[:length-1]
-		} else {
-			v,_ := strconv.Atoi(tokens[i])
-			stack = append(stack,v)
-		}
-	}
-	return stack[0]
+    stack := []int{}    
+    for i := 0 ; i < len(tokens); i++ {
+    	length := len(stack)
+    	if tokens[i] == "+" {
+    		stack[length-2] = stack[length-2] + stack[length-1]
+    		stack = stack[:length-1]
+    	} else if tokens[i] == "-" {
+    		stack[length-2] = stack[length-2] - stack[length-1]
+    		stack = stack[:length-1]
+    	} else if tokens[i] == "*" {
+    		stack[length-2] = stack[length-2] * stack[length-1]
+    		stack = stack[:length-1]
+    	} else if tokens[i] == "/" {
+    		stack[length-2] = stack[length-2] / stack[length-1]
+    		stack = stack[:length-1]
+    	} else {
+    		v,_ := strconv.Atoi(tokens[i])
+    		stack = append(stack,v)
+    	}
+    }
+    return stack[0]
 }
 ````
 
