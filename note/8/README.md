@@ -61,7 +61,7 @@
      因此返回 INT_MIN (−231) 。
 ````
 
-## 代码 jack_o_lantern:
+## 代码 :jack_o_lantern:
 
 ``` Go
 func myAtoi(str string) int {
