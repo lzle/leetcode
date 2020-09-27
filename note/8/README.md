@@ -61,13 +61,7 @@
      因此返回 INT_MIN (−231) 。
 ````
 
-## 思路:jack_o_lantern:
-
-关键：缓存。
-
-循环数组，从缓存map中尝试查询相加等于target的值。如果查询到则结束，查询不到把当前值添加到map中。
-
-## 代码
+## 代码 jack_o_lantern:
 
 ``` Go
 func myAtoi(str string) int {
