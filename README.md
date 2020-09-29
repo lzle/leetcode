@@ -1,2 +1,11 @@
 # LeetCode
-LeetCode solutions written in Go.
+
+### 树
+
+* [二叉树最大深度](note/104)
+
+* [反转二叉树](note/226)
+
+* [合并二叉树](note/617)
+
+* [二叉树的中序遍历](note/94)
