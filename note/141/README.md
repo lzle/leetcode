@@ -30,7 +30,8 @@ Can you solve it using O(1) (i.e. constant) memory?
 
 ## 思路
 
-快、慢指针
+1、循环链表，走过的节点加入集合中，每次判断，有重复，则有环
+2、快、慢指针
 
 ## 代码
 ```` Go
