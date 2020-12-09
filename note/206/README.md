@@ -17,7 +17,7 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 ## 思路 :whale:
 
-利用指针pre，遍历链表，修改当前节点Next指向prev。当前节点下移，prev赋值为当前节点，如此循环。
+设置prev与cur节点，利用指针prev，遍历链表，修改当前节点next指向prev。当前节点下移，prev赋值为当前节点，如此循环。
 
 ## 代码
 ```` Go
@@ -41,3 +41,17 @@ func reverseList(head *ListNode) *ListNode {
 }
 ````
 
+``` python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        prev,cur =  None,head
+        while cur:
+           cur.next,prev,cur = prev,cur,cur.next
+        return prev
+```
