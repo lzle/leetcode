@@ -52,6 +52,9 @@ Output: true
 栈。
 
 ## 代码
+
+#### 方法一
+
 ```` Go
 func isValid(s string) bool {
 	var temp []string
@@ -81,3 +84,17 @@ func isValid(s string) bool {
 }
 ````
 
+#### 方法二
+
+``` Python3
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        m = {")":"(","]":"[","}":"{"}
+        for c in s:
+            if c not in m :
+                stack.append(c)
+            elif not stack or stack.pop() != m[c]:
+                return False
+        return not stack
+```
