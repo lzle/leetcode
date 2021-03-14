@@ -35,24 +35,28 @@ Explanation: There are three ways to climb to the top.
 
 ## 思路
 
-递归。
+回归斐波那契算法，可使用动态规划。
 
 ## 代码
 
 ```` Go
-var m = make(map[int]int) 
-
 func climbStairs(n int) int {
-    if n <= 1 {
-        return 1
-    } else if n ==2 {
-        return 2
+    dp := make([]int,n+1)
+    dp[0],dp[1] = 1,1
+    for i:=2; i<=n; i++ {
+        dp[i] = dp[i-1]+dp[i-2]
     }
-    if m[n] != 0 {
-        return m[n]
+    return dp[n]
+}
+````
+
+```` Go
+func climbStairs(n int) int {
+    a,b := 1,1
+    for i:=1; i<=n; i++ {
+        a,b = b,a+b
     }
-    m[n] = climbStairs(n-1) + climbStairs(n-2)
-    return m[n]
+    return a
 }
 ````
 
