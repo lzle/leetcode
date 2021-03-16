@@ -30,12 +30,8 @@ A linked list can be reversed either iteratively or recursively. Could you imple
  */
 func reverseList(head *ListNode) *ListNode {
     var prev *ListNode
-
     for head != nil {
-        next := head.Next
-        head.Next = prev
-        prev = head
-        head = next
+        prev,head,head.Next = head,head.Next,prev
     }
     return prev
 }
