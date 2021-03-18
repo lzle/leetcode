@@ -57,30 +57,25 @@ Output: true
 
 ```` Go
 func isValid(s string) bool {
-	var temp []string
-	var left = map[string]string{"(":"", "[":"", "{":""}
-	var right = map[string]string{")":"(", "]":"[", "}":"{"}
-
-	for _,v := range s {
-		n := string(v)
-		_,ok := left[n]
-		if ok{
-			temp = append(temp,n)
-		} else {
-			r,_ := right[n]
-			length := len(temp)
-			if length > 0 && temp[length-1] == r{
-				temp = temp[:length-1]
-			} else {
-				return false
-			}
-		}
-	}
-    
-	if len(temp) >0 {
-		return false
-	}
-	return true
+    mp := map[byte]byte{
+        ')':'(',
+        '}':'{',
+        ']':'[',
+    }
+    queue := []byte{}
+    for i := range s {
+        value,ok := mp[s[i]]
+        n := len(queue)
+        if ok {
+            if n == 0 || value != queue[n-1] {
+                return false
+            }
+            queue = queue[:n-1]
+        } else {
+            queue = append(queue,s[i])
+        }
+    }
+    return len(queue) == 0
 }
 ````
 
